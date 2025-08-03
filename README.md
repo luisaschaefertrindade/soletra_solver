@@ -10,8 +10,8 @@ This tool can be used as a helper to solve g1's [Soletra](https://g1.globo.com/j
 ## Features
 
 * Tkinter‑based GUI for an easy, interactive experience
-* Load and use your own vocabulary file (UTF‑8 encoded `.txt`)
-* Automatically filters out:
+* Load and use a vocabulary file (UTF‑8 encoded `palavras.txt`). This file is a collection of dictionary entries scraped from VOLP, Vocabulário Ortográfico da Língua Portuguesa, available in https://voc.cplp.org/index.php
+* For the purpose of this puzzle, the program automatically filters out:
 
   * Words with uppercase letters
   * Hyphenated words
@@ -55,7 +55,7 @@ This tool can be used as a helper to solve g1's [Soletra](https://g1.globo.com/j
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+Distributed under the MIT License.
 
 ---
 
