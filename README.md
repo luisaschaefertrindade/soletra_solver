@@ -1,7 +1,9 @@
 # Soletra puzzle helper
 
 This tool can be used as a helper to solve g1's [Soletra](https://g1.globo.com/jogos/soletra/) puzzle, equivalent of New York Times' Spelling Bee. Enter a mandatory letter and six complementary letters, and the program will list all valid words from a vocabulary file.
-<img width="519" height="460" alt="image" src="https://github.com/user-attachments/assets/b745eaa4-375d-4fcb-91d6-026f76d5c1f0" />
+
+<img width="523" height="463" alt="image" src="https://github.com/user-attachments/assets/f6c24edd-c330-4239-85e2-7ece49488053" />
+
 
 ---
 
