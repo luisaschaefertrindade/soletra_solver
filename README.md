@@ -1,22 +1,24 @@
 # Soletra puzzle helper
 
-This tool can be used as a helper to solve g1's [Soletra](https://g1.globo.com/jogos/soletra/) puzzle, equivalent of New York Times' Spelling Bee. Enter a mandatory letter and six complementary letters, and the program will list all valid words from a vocabulary file.
+This tool can be used as a helper to solve g1's [Soletra](https://g1.globo.com/jogos/soletra/) puzzle, equivalent of New York Times' _Spelling Bee_. Enter a **mandatory letter** and **six complementary letters**, and the program will list all valid words from a vocabulary file.
 
-<img width="742" height="630" alt="image" src="https://github.com/user-attachments/assets/46656cb2-81d9-4ad8-8500-7e5647305389" />
+<img width="742" height="629" alt="image" src="https://github.com/user-attachments/assets/e4f26715-52fc-486f-b075-fb5955895244" />
 
 ---
 
 ## Features
 
-* Tkinter‑based GUI for an easy, interactive experience
-* Load and use a vocabulary file (UTF‑8 encoded `palavras.txt`). This file is a collection of dictionary entries scraped from VOLP, Vocabulário Ortográfico da Língua Portuguesa, available in https://voc.cplp.org/index.php
-* For the purpose of this puzzle, the program automatically filters out:
+* Modern GUI built with `customtkinter` for a clean and responsive interface
+* Uses spaCy's Portuguese model (`pt_core_news_sm`) for basic linguistic filtering
+* Loads words from a vocabulary file, a collection of dictionary entries scraped from VOLP, Vocabulário Ortográfico da Língua Portuguesa, available in https://voc.cplp.org/index.php
+* Filters and sorts words according to Soletra puzzle rules, excluding:
 
   * Words with uppercase letters
   * Hyphenated words
   * Words containing dots
   * Words shorter than 4 letters
 * Sorts results by length, then alphabetically
+* Removes simple plurals (e.g., “gostos” is excluded if “gosto” is already listed)
 * Displays results in a scrollable text box
 
 ## Installation
@@ -34,6 +36,12 @@ This tool can be used as a helper to solve g1's [Soletra](https://g1.globo.com/j
    python3 -m venv venv
    source venv/bin/activate   # Linux/macOS
    venv\\Scripts\\activate  # Windows
+   ```
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   python -m spacy download pt_core_news_sm
    ```
 
 ## Usage
