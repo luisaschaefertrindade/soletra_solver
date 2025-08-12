@@ -89,7 +89,7 @@ if st.button("Encontrar palavras"):
                 # Download button
                 csv = "\n".join(filtered_results)
                 st.download_button(
-                    label="📥 Baixar lista",
+                    label="Baixar lista",
                     data=csv,
                     file_name="palavras_encontradas.txt",
                     mime="text/plain"
